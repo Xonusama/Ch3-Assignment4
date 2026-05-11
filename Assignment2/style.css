@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  background-color: #000000;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em;
+}
+nav .brand {
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+  color: white;
+  font-size: 1.3em;
+}
+nav .brand img {
+  width: 3em;
+}
+nav .navbar {
+  display: flex;
+  align-items: center;
+  gap: 3.5em;
+}
+nav .navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: all 0.3s ease;
+}
+nav .navbar a:hover {
+  color: #ff6347;
+}
+nav .btn button {
+  padding: 0.5em 1.5em;
+  background-color: #121212;
+  font-weight: 600;
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+nav .btn button:hover {
+  background-color: #ff4500;
+  color: black;
+}
+
+.tag-line {
+  width: 100%;
+  color: white;
+  font-size: 9em;
+  padding: 0.3em 0.5em 0.5em 0.5em;
+  font-weight: 600;
+}
+
+.option-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 0 27em;
+}
+.option-bar button {
+  padding: 0.5em 1.2em;
+  border-radius: 50px;
+  font-size: 1.1em;
+  border: none;
+  background-color: #363636;
+  transition: all 0.5s ease;
+  color: white;
+}
+.option-bar button:hover {
+  background-color: #ff4500;
+  color: black;
+}
+
+.cards {
+  width: 100%;
+  height: 90%;
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+  padding: 1.5em 1.5em;
+}
+.cards .card {
+  height: 100%;
+  background-color: rgba(54, 54, 54, 0.4666666667);
+  border-radius: 20px;
+}
+.cards .card .top {
+  height: 70%;
+  background-image: url(./assets/glass.png);
+  background-size: cover;
+  background-position: 20% 35%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+.cards .card .bottom {
+  padding: 0.5em 1em;
+  line-height: 2.9em;
+  color: rgba(255, 255, 255, 0.587);
+}
+.cards .card .bottom button {
+  background-color: #551C0B;
+  color: #F0A174;
+  font-size: 1em;
+  padding: 0.3em 1em;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+.cards .card .bottom #bottom-info {
+  color: white;
+  font-size: 1.5em;
+  letter-spacing: 0em;
+  word-spacing: 0em;
+  line-height: 1em;
+}
+.cards #card2 .top {
+  background-image: url(./assets/chair.png);
+}
+.cards #card3 .top {
+  background-image: url(./assets/cat.png);
+}/*# sourceMappingURL=style.css.map */
